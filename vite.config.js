@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 // e.g. https://<username>.github.io/paradise-nursery/
 export default defineConfig({
   plugins: [react()],
-  base: '/paradise-nursery/',
+  base: '/Coursera-React/',
 });
