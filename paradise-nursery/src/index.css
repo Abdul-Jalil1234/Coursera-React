@@ -1,0 +1,63 @@
+:root {
+  /* Color tokens — deep forest, sage, warm cream, clay accent */
+  --forest-900: #16302a;
+  --forest-700: #1f4a3d;
+  --sage-400: #8fae9c;
+  --sage-100: #e4ede7;
+  --cream-50: #faf7f0;
+  --clay-500: #b8712f;
+  --clay-600: #9c5d24;
+  --ink-900: #1c231f;
+  --ink-500: #52605a;
+  --white: #ffffff;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-card: 0 4px 16px rgba(22, 48, 42, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink-900);
+  background: var(--cream-50);
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0 0 0.5em;
+  line-height: 1.15;
+  color: var(--forest-900);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--clay-500);
+  outline-offset: 2px;
+}

@@ -1,0 +1,53 @@
+/* Landing page background image.
+   Implemented as an inline SVG data URI so the project has zero external
+   image dependencies — swap this for url('/your-photo.jpg') if you'd
+   rather use a real photograph. */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(180deg, rgba(22, 48, 42, 0.72), rgba(22, 48, 42, 0.85)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Crect width='800' height='800' fill='%231f4a3d'/%3E%3Cg fill='%232f5d50' opacity='0.6'%3E%3Cpath d='M100 700 Q120 500 80 300 Q140 320 160 200 Q200 340 220 500 Q180 620 100 700Z'/%3E%3Cpath d='M650 750 Q660 550 610 380 Q680 400 700 260 Q740 420 730 560 Q690 680 650 750Z'/%3E%3Cpath d='M400 60 Q430 160 380 260 Q450 240 490 320 Q430 340 420 420 Q360 320 340 200 Q370 120 400 60Z'/%3E%3C/g%3E%3Cg fill='%23244d3a' opacity='0.5'%3E%3Ccircle cx='120' cy='120' r='60'/%3E%3Ccircle cx='700' cy='150' r='90'/%3E%3Ccircle cx='60' cy='620' r='70'/%3E%3Ccircle cx='740' cy='680' r='55'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 1.5rem;
+}
+
+.landing-overlay {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+}
+
+.landing-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.landing-tagline {
+  font-size: 1.15rem;
+  color: var(--sage-100);
+  margin-bottom: 2rem;
+}
+
+.get-started-btn {
+  background: var(--clay-500);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem 2.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.get-started-btn:hover {
+  background: var(--clay-600);
+  transform: translateY(-1px);
+}
